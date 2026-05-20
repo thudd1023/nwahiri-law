@@ -25,10 +25,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/results',
     '/contact',
     '/free-consultation',
+    '/blog',
     '/atlanta-personal-injury-attorney',
     '/georgia-personal-injury-lawyer',
     '/florida-personal-injury-lawyer',
     '/ai-info',
+    '/privacy-policy',
+    '/legal-disclaimer',
+    '/terms-of-use',
   ];
 
   return routes.map((route) => ({

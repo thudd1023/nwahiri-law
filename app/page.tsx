@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import HeroCTA from '@/components/HeroCTA';
+import HeroAttorneyPhoto from '@/components/HeroAttorneyPhoto';
+import AttorneyIntroPhoto from '@/components/AttorneyIntroPhoto';
 
 export const metadata: Metadata = {
   title: 'Personal Injury Attorney in Georgia & Florida | Nwahiri Law',
@@ -28,94 +31,29 @@ const tickerItems = [
 ];
 
 const practiceAreas = [
-  {
-    icon: '🚛',
-    title: 'Truck Accidents',
-    desc: '18-wheelers and commercial vehicles cause catastrophic damage. We know how to take on carriers and their insurers.',
-    href: '/practice-areas/truck-accidents',
-  },
-  {
-    icon: '🧠',
-    title: 'Traumatic Brain Injury',
-    desc: 'TBI cases require medical expertise and legal precision. We build the evidence to secure the lifetime compensation you may need.',
-    href: '/practice-areas/traumatic-brain-injury',
-  },
-  {
-    icon: '🚗',
-    title: 'Uber & Lyft Accidents',
-    desc: 'Rideshare accidents involve complex insurance layers. We cut through the confusion and fight for full accountability.',
-    href: '/practice-areas/uber-lyft-accidents',
-  },
-  {
-    icon: '⚠️',
-    title: 'Slip & Fall',
-    desc: 'Property owners have a duty to keep you safe. When they fail, we hold them responsible.',
-    href: '/practice-areas/slip-and-fall',
-  },
-  {
-    icon: '🚙',
-    title: 'Car Accidents',
-    desc: 'From minor crashes to life-altering collisions, we handle every aspect of your claim so you can focus on healing.',
-    href: '/practice-areas/car-accidents',
-  },
-  {
-    icon: '✝️',
-    title: 'Wrongful Death',
-    desc: 'No settlement can replace a loved one. But justice and financial security for your family can make a profound difference.',
-    href: '/practice-areas/wrongful-death',
-  },
-  {
-    icon: '⚖️',
-    title: 'Police Excessive Force',
-    desc: 'When law enforcement crosses the line, there are legal consequences. We hold officers and agencies accountable for civil rights violations.',
-    href: '/practice-areas/excessive-force',
-  },
+  { num: '01', title: 'Truck Accidents', desc: '18-wheelers and commercial vehicles cause catastrophic damage. We know how to take on carriers and their insurers.', href: '/practice-areas/truck-accidents' },
+  { num: '02', title: 'Traumatic Brain Injury', desc: 'TBI cases require medical expertise and legal precision. We build the evidence to secure lifetime compensation.', href: '/practice-areas/traumatic-brain-injury' },
+  { num: '03', title: 'Uber & Lyft Accidents', desc: 'Rideshare accidents involve complex insurance layers. We cut through the confusion and fight for full accountability.', href: '/practice-areas/uber-lyft-accidents' },
+  { num: '04', title: 'Slip & Fall', desc: 'Property owners have a duty to keep you safe. When they fail, we hold them responsible.', href: '/practice-areas/slip-and-fall' },
+  { num: '05', title: 'Car Accidents', desc: 'From minor crashes to life-altering collisions, we handle every aspect of your claim so you can focus on healing.', href: '/practice-areas/car-accidents' },
+  { num: '06', title: 'Wrongful Death', desc: 'No settlement can replace a loved one. But justice and financial security for your family can make a profound difference.', href: '/practice-areas/wrongful-death' },
+  { num: '07', title: 'Civil Rights & Excessive Force', desc: 'When law enforcement crosses the line, we hold officers and agencies accountable for civil rights violations.', href: '/practice-areas/excessive-force' },
+  { num: '08', title: 'Premises Liability', desc: 'Unsafe properties injure people every day. We pursue owners, managers, and insurers for the full value of your loss.', href: '/practice-areas/premises-liability' },
+  { num: '09', title: 'Criminal Defense', desc: 'Facing criminal charges demands a fighter in your corner. We protect your rights and your future at every stage.', href: '/practice-areas/criminal-defense' },
 ];
 
 const caseResults = [
-  {
-    amount: '$340,000',
-    type: 'Auto Accident | Traumatic Brain Injury',
-    state: 'Georgia',
-    desc: 'Client suffered a serious TBI in a high-impact auto collision. Nwahiri Law secured a $340,000 settlement covering medical expenses, lost wages, and long-term rehabilitation needs.',
-  },
-  {
-    amount: '$300,000',
-    type: 'Civil Rights Violation',
-    state: 'Florida',
-    desc: 'Client\'s civil rights were violated by a Florida government entity. Nwahiri Law secured $300,000 in compensation for the harm caused.',
-  },
-  {
-    amount: '$225,000+',
-    type: 'Personal Injury | Major Airline Incident',
-    state: 'Florida',
-    desc: 'Client was seriously injured during travel on a major commercial airline. Nwahiri Law recovered $225,000+ against the carrier.',
-  },
-  {
-    amount: '$200,000',
-    type: 'Civil Rights | Police Dog Bite',
-    state: 'Florida',
-    desc: 'Client sustained serious injuries from a police canine. Nwahiri Law secured $200,000 in this civil rights and excessive force matter.',
-  },
+  { amount: '$340,000', type: 'Auto Accident — Traumatic Brain Injury', state: 'Georgia', desc: 'Client suffered a serious TBI in a high-impact auto collision. Nwahiri Law secured a $340,000 settlement covering medical expenses, lost wages, and long-term rehabilitation.' },
+  { amount: '$300,000', type: 'Civil Rights Violation', state: 'Florida', desc: 'Client\'s civil rights were violated by a Florida government entity. Nwahiri Law secured $300,000 in compensation.' },
+  { amount: '$225,000+', type: 'Personal Injury — Major Airline', state: 'Florida', desc: 'Client seriously injured during travel on a major commercial airline. Nwahiri Law recovered $225,000+ against the carrier.' },
+  { amount: '$200,000', type: 'Civil Rights — Police Dog Bite', state: 'Florida', desc: 'Client sustained serious injuries from a police canine. Nwahiri Law secured $200,000 in this civil rights and excessive force matter.' },
 ];
 
 const whyItems = [
-  {
-    title: 'No Fee Unless We Win',
-    desc: 'You pay nothing upfront. Our fee comes only from the compensation we recover for you. There is no financial risk to getting started.',
-  },
-  {
-    title: 'Direct Access to Your Attorney',
-    desc: 'You will communicate directly with Attorney Nwahiri — not a paralegal or case manager. Your case gets personal attention.',
-  },
-  {
-    title: 'Licensed in Two States',
-    desc: 'Admitted to the State Bars of Georgia and Florida, we can handle your case no matter which state your injury occurred in.',
-  },
-  {
-    title: 'Free, Confidential Consultation',
-    desc: 'We\'ll review your case, answer your questions, and give you an honest assessment — at no cost and with no obligation.',
-  },
+  { title: 'No Fee Unless We Win', desc: 'You pay nothing upfront on personal injury and civil rights cases. Our fee comes only from the compensation we recover.' },
+  { title: 'Direct Attorney Access', desc: 'You communicate directly with Attorney Nwahiri — not a paralegal or case manager. Your case gets personal attention.' },
+  { title: 'Licensed in Two States', desc: 'Admitted to the State Bars of Georgia and Florida. Wherever your injury occurred, we can represent you.' },
+  { title: 'Free Confidential Consultation', desc: 'We review your case, answer your questions, and give an honest assessment — at no cost and no obligation.' },
 ];
 
 export default function HomePage() {
@@ -123,396 +61,301 @@ export default function HomePage() {
 
   return (
     <>
-      {/* HERO */}
-      <section style={{ backgroundColor: '#0F2044' }} className="relative py-24 md:py-32 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <p
-            style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif' }}
-            className="text-sm font-semibold uppercase tracking-widest mb-6"
-          >
-            Licensed in Georgia &amp; Florida
-          </p>
-          <h1
-            style={{ fontFamily: 'Cormorant Garamond, serif', color: 'white' }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8"
-          >
-            Serious injuries and injustices demand serious representation.
-          </h1>
-          <p
-            style={{ color: '#e5e7eb', fontFamily: 'Montserrat, sans-serif' }}
-            className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-6"
-          >
-            Attorney Tobechuku Nwahiri fights for the full compensation you deserve after truck accidents,
-            traumatic brain injuries, rideshare crashes, and more — in Georgia and Florida.
-          </p>
-          <p
-            style={{ color: '#d1d5db', fontFamily: 'Montserrat, sans-serif' }}
-            className="text-base leading-relaxed max-w-2xl mx-auto mb-10"
-          >
-            When you&apos;re hurt and the insurance companies are already working against you, you need an attorney
-            who knows the law, knows the tactics, and will not back down. Nwahiri Law takes on the cases that matter most.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Link
-              href="/free-consultation"
-              style={{ backgroundColor: '#BE1823', fontFamily: 'Montserrat, sans-serif' }}
-              className="inline-block text-white font-semibold px-8 py-4 rounded hover:opacity-90 transition-opacity text-base"
-            >
-              Get Your Free Consultation
-            </Link>
-            <Link
-              href="/results"
-              style={{ borderColor: 'rgba(255,255,255,0.5)', color: 'white', fontFamily: 'Montserrat, sans-serif' }}
-              className="inline-block border-2 font-semibold px-8 py-4 rounded hover:border-white transition-colors text-base"
-            >
-              View Case Results
-            </Link>
-          </div>
+      {/* ── HERO ─────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden" style={{ minHeight: '620px' }}>
+        {/* Background image */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'url(/images/hero/courtroom.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 30%',
+            zIndex: 0,
+          }}
+        />
+        {/* Dark overlay */}
+        <div
+          className="absolute inset-0"
+          style={{ backgroundColor: 'rgba(10,26,56,0.82)', zIndex: 1 }}
+        />
 
-          {/* Trust bar */}
-          <div
-            className="flex flex-wrap items-center justify-center gap-6 md:gap-10"
-            style={{ fontFamily: 'Montserrat, sans-serif' }}
-          >
-            {['Licensed in Georgia & Florida', 'No Fee Unless We Win', 'Free Consultations', 'Available 24/7'].map(
-              (item) => (
-                <div key={item} className="flex items-center gap-2 text-sm text-gray-300">
-                  <span style={{ color: '#B8973B' }}>✓</span>
-                  <span>{item}</span>
+        <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-36" style={{ zIndex: 2 }}>
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-4 mb-8">
+              <div style={{ backgroundColor: '#B8973B', height: '1px', width: '36px', flexShrink: 0 }} />
+              <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.2em' }} className="uppercase font-semibold">
+                Licensed in Georgia &amp; Florida
+              </span>
+            </div>
+            <h1
+              style={{ fontFamily: 'Cormorant Garamond, serif', color: 'white', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.08 }}
+              className="text-5xl md:text-6xl lg:text-7xl mb-8"
+            >
+              Serious injuries and injustices demand serious representation.
+            </h1>
+            <div style={{ backgroundColor: '#B8973B', height: '1px', width: '56px', marginBottom: '1.75rem' }} />
+            <p style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'Montserrat, sans-serif', fontSize: '15px', lineHeight: 1.8, maxWidth: '520px' }}>
+              Attorney Tobechuku Nwahiri fights for full compensation after truck accidents, traumatic brain injuries, rideshare crashes, civil rights violations, and more — across Georgia and Florida.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-10">
+              <Link
+                href="/free-consultation"
+                style={{ backgroundColor: '#BE1823', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.12em', padding: '16px 32px' }}
+                className="text-white font-semibold uppercase text-center hover:opacity-90 transition-opacity"
+              >
+                Get a Free Consultation
+              </Link>
+              <Link
+                href="/results"
+                style={{ border: '1px solid rgba(255,255,255,0.25)', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.12em', padding: '16px 32px', color: 'rgba(255,255,255,0.8)' }}
+                className="uppercase text-center font-semibold hover:border-white hover:text-white transition-colors"
+              >
+                View Case Results
+              </Link>
+            </div>
+            <div className="flex flex-wrap gap-x-8 gap-y-3 mt-12 pt-10" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+              {['Licensed in Georgia & Florida', 'No Fee on Injury or Civil Cases Unless We Win', 'Free Consultations', 'Phones Answered 24/7'].map((item) => (
+                <div key={item} style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.06em' }} className="flex items-center gap-2">
+                  <span style={{ color: '#B8973B' }}>—</span>
+                  {item}
                 </div>
-              )
-            )}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SETTLEMENTS TICKER */}
-      <div
-        style={{ backgroundColor: '#1A3566' }}
-        className="overflow-hidden py-4 relative"
-      >
-        <div className="flex items-center gap-2 px-4 mb-0" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-        </div>
+      {/* ── SETTLEMENTS TICKER ───────────────────────────────── */}
+      <div style={{ backgroundColor: '#0F2044', borderTop: '1px solid rgba(184,151,59,0.2)', borderBottom: '1px solid rgba(184,151,59,0.2)' }} className="overflow-hidden py-3.5">
         <div className="overflow-hidden">
           <div className="ticker-track flex items-center">
             {tickerContent.map((item, i) => (
-              <span
-                key={i}
-                style={{ fontFamily: 'Montserrat, sans-serif', color: '#F8F4EE' }}
-                className="text-sm font-semibold flex-shrink-0 px-6"
-              >
-                <span style={{ color: '#B8973B' }} className="font-bold">Recent Result:</span> {item}
-                <span className="mx-6 text-gray-400">·</span>
+              <span key={i} style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(255,255,255,0.6)', fontSize: '12px', letterSpacing: '0.04em' }} className="flex-shrink-0 px-8">
+                <span style={{ color: '#B8973B' }} className="font-semibold">Recent Result:</span>{' '}{item}
+                <span className="mx-8 opacity-30">|</span>
               </span>
             ))}
           </div>
         </div>
       </div>
 
-      {/* RECOGNITION */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <p
-            style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif' }}
-            className="text-xs font-semibold uppercase tracking-widest mb-8"
-          >
-            Recognized for Excellence
-          </p>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20">
+      {/* ── RECOGNITION + CREDENTIALS (combined) ─────────────── */}
+      <section style={{ backgroundColor: '#F8F4EE' }} className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-4 mb-14">
+            <div style={{ backgroundColor: '#B8973B', height: '1px', width: '36px', flexShrink: 0 }} />
+            <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.2em' }} className="uppercase font-semibold">
+              Recognized for Excellence
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0" style={{ borderTop: '1px solid rgba(15,32,68,0.1)' }}>
+
             {/* National Trial Lawyers */}
-            <div className="flex flex-col items-center gap-3">
-              <div
-                className="w-24 h-24 rounded-full flex items-center justify-center bg-gray-100 border-2"
-                style={{ borderColor: '#B8973B' }}
-              >
-                <span style={{ color: '#0F2044' }} className="text-xs font-bold text-center leading-tight px-2">
-                  TOP 40<br />UNDER 40
-                </span>
-              </div>
-              <div style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}>
-                <p className="text-xl font-bold">National Trial Lawyers</p>
-                <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280' }} className="text-sm mt-1">
-                  Top 40 Under 40 · Civil Plaintiff
-                </p>
-                <p style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif' }} className="text-sm font-semibold">
-                  2024 · 2025 · 2026
-                </p>
-              </div>
+            <div className="py-10 pr-8" style={{ borderRight: '1px solid rgba(15,32,68,0.1)' }}>
+              <Image
+                src="/images/badges/national-trial-lawyers.png"
+                alt="National Trial Lawyers"
+                width={100}
+                height={100}
+                className="object-contain mb-5"
+                unoptimized
+              />
+              <h3 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontWeight: 600, fontSize: '1.25rem' }}>
+                National Trial Lawyers
+              </h3>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '12px', marginTop: '4px' }}>
+                Top 40 Under 40 · Civil Plaintiff
+              </p>
+              <p style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.08em', marginTop: '8px' }} className="font-semibold">
+                2022 · 2023 · 2024
+              </p>
             </div>
 
-            <div
-              className="hidden md:block w-px h-20"
-              style={{ backgroundColor: '#e5e7eb' }}
-            />
+            {/* 11+ Years */}
+            <div className="py-10 px-8" style={{ borderRight: '1px solid rgba(15,32,68,0.1)' }}>
+              <p style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontWeight: 300, fontSize: '3.5rem', lineHeight: 1 }}>
+                11+
+              </p>
+              <div style={{ height: '1px', backgroundColor: '#B8973B', width: '24px', margin: '12px 0' }} />
+              <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '11px', letterSpacing: '0.1em' }} className="uppercase">
+                Years of Experience
+              </p>
+            </div>
+
+            {/* GA & FL */}
+            <div className="py-10 px-8" style={{ borderRight: '1px solid rgba(15,32,68,0.1)' }}>
+              <p style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontWeight: 300, fontSize: '3.5rem', lineHeight: 1 }}>
+                GA &amp; FL
+              </p>
+              <div style={{ height: '1px', backgroundColor: '#B8973B', width: '24px', margin: '12px 0' }} />
+              <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '11px', letterSpacing: '0.1em' }} className="uppercase">
+                Licensed in Both States
+              </p>
+            </div>
 
             {/* Best Lawyers */}
-            <div className="flex flex-col items-center gap-3">
-              <div
-                style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-                className="text-center"
-              >
-                <p
-                  style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif' }}
-                  className="text-xs font-semibold uppercase tracking-widest mb-2"
-                >
-                  Best Lawyers
-                </p>
-                <p className="text-2xl font-bold italic">Ones to Watch</p>
-                <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280' }} className="text-sm mt-1">
-                  Personal Injury Litigation
-                </p>
-                <p style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif' }} className="text-sm font-semibold mt-1">
-                  2024 · 2025 · 2026
-                </p>
-              </div>
+            <div className="py-10 pl-8">
+              <h3 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontWeight: 600, fontStyle: 'italic', fontSize: '1.25rem' }}>
+                Best Lawyers — <em>Ones to Watch</em>
+              </h3>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '12px', marginTop: '4px' }}>
+                Personal Injury Litigation
+              </p>
+              <p style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.08em', marginTop: '8px' }} className="font-semibold">
+                2024 · 2025 · 2026
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* STAT BAR */}
-      <section style={{ backgroundColor: '#0F2044' }} className="py-12 px-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          {[
-            { stat: '11+', label: 'Years of Experience' },
-            { stat: 'Top 40', label: 'National Trial Lawyers' },
-            { stat: 'GA & FL', label: 'Licensed in Both States' },
-            { stat: '$0', label: 'Upfront — No Fee Unless We Win' },
-          ].map(({ stat, label }) => (
-            <div key={stat}>
-              <p
-                style={{ fontFamily: 'Cormorant Garamond, serif', color: '#B8973B' }}
-                className="text-4xl md:text-5xl font-bold mb-2"
-              >
-                {stat}
-              </p>
-              <p
-                style={{ fontFamily: 'Montserrat, sans-serif', color: '#e5e7eb' }}
-                className="text-sm"
-              >
-                {label}
-              </p>
+      {/* ── PRACTICE AREAS ───────────────────────────────────── */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-14">
+            <div className="flex items-center gap-4 mb-5">
+              <div style={{ backgroundColor: '#B8973B', height: '1px', width: '36px', flexShrink: 0 }} />
+              <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.2em' }} className="uppercase font-semibold">
+                Areas of Practice
+              </span>
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* PRACTICE AREAS */}
-      <section style={{ backgroundColor: '#F8F4EE' }} className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2
-              style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-              className="text-4xl md:text-5xl font-bold mb-4"
-            >
+            <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontWeight: 600 }} className="text-4xl md:text-5xl">
               What We Fight For
             </h2>
-            <p
-              style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }}
-              className="text-base max-w-2xl mx-auto"
-            >
-              We focus on high-stakes personal injury and civil rights cases where the outcome truly changes lives.
-            </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0" style={{ border: '1px solid rgba(15,32,68,0.1)' }}>
             {practiceAreas.map((area) => (
-              <div
-                key={area.href}
-                className="bg-white rounded p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
-              >
-                <div className="text-3xl mb-3">{area.icon}</div>
-                <h3
-                  style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-                  className="text-xl font-bold mb-2"
-                >
+              <Link key={area.href} href={area.href} className="group block p-8 transition-colors hover:bg-navy" style={{ borderRight: '1px solid rgba(15,32,68,0.1)', borderBottom: '1px solid rgba(15,32,68,0.1)' }}>
+                <p style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.12em' }} className="font-semibold mb-3">
+                  {area.num}
+                </p>
+                <h3 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontSize: '1.35rem', fontWeight: 600 }} className="mb-3">
                   {area.title}
                 </h3>
-                <p
-                  style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280' }}
-                  className="text-sm leading-relaxed mb-4"
-                >
+                <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '13px', lineHeight: 1.7 }} className="mb-4">
                   {area.desc}
                 </p>
-                <Link
-                  href={area.href}
-                  style={{ color: '#BE1823', fontFamily: 'Montserrat, sans-serif' }}
-                  className="text-sm font-semibold hover:opacity-70 transition-opacity"
-                >
+                <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.08em' }} className="font-semibold uppercase">
                   Learn More &rarr;
-                </Link>
-              </div>
+                </span>
+              </Link>
             ))}
           </div>
-          <div className="text-center mt-10">
+          <div className="mt-10">
             <Link
               href="/practice-areas"
-              style={{ color: '#0F2044', borderColor: '#0F2044', fontFamily: 'Montserrat, sans-serif' }}
-              className="inline-block border-2 font-semibold px-8 py-3.5 rounded hover:bg-navy hover:text-white transition-colors"
+              style={{ border: '1px solid #0F2044', color: '#0F2044', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.12em', padding: '14px 28px' }}
+              className="inline-block font-semibold uppercase hover:opacity-70 transition-opacity"
             >
-              View All Practice Areas &rarr;
+              View All Practice Areas
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ATTORNEY INTRO */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            {/* Photo placeholder */}
-            <div
-              className="w-full aspect-[3/4] rounded bg-gray-200 flex items-center justify-center max-w-sm mx-auto md:mx-0"
-            >
-              <span style={{ color: '#9ca3af', fontFamily: 'Montserrat, sans-serif' }} className="text-sm">
-                Attorney Photo
-              </span>
-            </div>
+      {/* ── ATTORNEY INTRO ───────────────────────────────────── */}
+      <section style={{ backgroundColor: '#F8F4EE' }} className="py-24 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="relative">
+            <AttorneyIntroPhoto />
           </div>
           <div>
-            <p
-              style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif' }}
-              className="text-xs font-semibold uppercase tracking-widest mb-4"
-            >
-              Your Attorney. Your Advocate.
-            </p>
-            <h2
-              style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-            >
+            <div className="flex items-center gap-4 mb-6">
+              <div style={{ backgroundColor: '#B8973B', height: '1px', width: '36px', flexShrink: 0 }} />
+              <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.2em' }} className="uppercase font-semibold">
+                Your Attorney. Your Advocate.
+              </span>
+            </div>
+            <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontWeight: 600, lineHeight: 1.1 }} className="text-4xl md:text-5xl mb-8">
               Attorney Tobechuku Nwahiri
             </h2>
-            <p
-              style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }}
-              className="text-base leading-relaxed mb-4"
-            >
-              Attorney Tobechuku Nwahiri built Nwahiri Law on a simple belief: every person who walks through
-              the door — regardless of their background, income, or circumstances — deserves the same caliber
-              of legal representation as the most powerful interests on the other side.
+            <div style={{ backgroundColor: '#B8973B', height: '1px', width: '40px', marginBottom: '2rem' }} />
+            <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563', fontSize: '14px', lineHeight: 1.85 }} className="mb-5">
+              Attorney Tobechuku Nwahiri built Nwahiri Law on a simple belief: every person who walks through the door — regardless of background, income, or circumstances — deserves the same caliber of legal representation as the most powerful interests on the other side.
             </p>
-            <p
-              style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }}
-              className="text-base leading-relaxed mb-4"
-            >
-              With over 11 years of legal experience, Attorney Nwahiri is licensed to practice in both Georgia
-              and Florida and has represented individuals and families facing some of the most difficult moments
-              of their lives — after devastating accidents, serious injuries, and violations of their civil rights.
+            <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563', fontSize: '14px', lineHeight: 1.85 }} className="mb-5">
+              With over 11 years of legal experience and licenses in both Georgia and Florida, he has represented individuals and families after devastating accidents, serious injuries, and civil rights violations. Recognized by Best Lawyers as &ldquo;Ones to Watch&rdquo; and by the National Trial Lawyers as Top 40 Under 40.
             </p>
-            <p
-              style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }}
-              className="text-base leading-relaxed mb-4"
-            >
-              Recognized by Best Lawyers as &ldquo;Ones to Watch&rdquo; and by the National Trial Lawyers as a Top 40 Under 40
-              Civil Plaintiff attorney, he has built a reputation for fighting hard and delivering real results.
-            </p>
-            <p
-              style={{ fontFamily: 'Montserrat, sans-serif', color: '#0F2044' }}
-              className="text-base font-medium leading-relaxed mb-8"
-            >
-              He does not take every case. He takes the right cases, and then he fights for them with everything he has.
+            <p style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontSize: '1.15rem', fontStyle: 'italic', lineHeight: 1.6 }} className="mb-9">
+              &ldquo;He does not take every case. He takes the right cases — and fights for them with everything he has.&rdquo;
             </p>
             <Link
               href="/about"
-              style={{ backgroundColor: '#0F2044', fontFamily: 'Montserrat, sans-serif' }}
-              className="inline-block text-white font-semibold px-7 py-3.5 rounded hover:opacity-80 transition-opacity"
+              style={{ backgroundColor: '#0F2044', color: 'white', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.12em', padding: '14px 28px' }}
+              className="inline-block font-semibold uppercase hover:opacity-80 transition-opacity"
             >
-              Meet Attorney Nwahiri &rarr;
+              Meet Attorney Nwahiri
             </Link>
           </div>
         </div>
       </section>
 
-      {/* CASE RESULTS */}
-      <section style={{ backgroundColor: '#F8F4EE' }} className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2
-              style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-              className="text-4xl md:text-5xl font-bold mb-4"
-            >
+      {/* ── CASE RESULTS ─────────────────────────────────────── */}
+      <section style={{ backgroundColor: '#0A1A38' }} className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-14">
+            <div className="flex items-center gap-4 mb-5">
+              <div style={{ backgroundColor: '#B8973B', height: '1px', width: '36px', flexShrink: 0 }} />
+              <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.2em' }} className="uppercase font-semibold">
+                Case Results
+              </span>
+            </div>
+            <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: 'white', fontWeight: 600 }} className="text-4xl md:text-5xl">
               Results That Speak for Themselves
             </h2>
-            <p
-              style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }}
-              className="text-base max-w-xl mx-auto"
-            >
-              We pursue maximum compensation — not quick settlements that benefit the insurance company.
-            </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0" style={{ borderTop: '1px solid rgba(184,151,59,0.2)' }}>
             {caseResults.map((result, i) => (
-              <div
-                key={i}
-                className="bg-white rounded p-6 shadow-sm border border-gray-100"
-              >
-                <p
-                  style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-                  className="text-3xl font-bold mb-2"
-                >
+              <div key={i} className="py-8 pr-8" style={i < 3 ? { borderRight: '1px solid rgba(255,255,255,0.06)' } : {}}>
+                <p style={{ fontFamily: 'Cormorant Garamond, serif', color: '#B8973B', fontWeight: 300 }} className="text-4xl md:text-5xl mb-3">
                   {result.amount}
                 </p>
-                <p
-                  style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif' }}
-                  className="text-xs font-semibold uppercase tracking-wider mb-1"
-                >
+                <p style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '10px', letterSpacing: '0.12em' }} className="uppercase font-semibold mb-2">
                   {result.state}
                 </p>
-                <p
-                  style={{ fontFamily: 'Montserrat, sans-serif', color: '#0F2044' }}
-                  className="text-sm font-semibold mb-3"
-                >
+                <p style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '13px', fontWeight: 500 }} className="mb-3">
                   {result.type}
                 </p>
-                <p
-                  style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280' }}
-                  className="text-sm leading-relaxed"
-                >
+                <p style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(255,255,255,0.4)', fontSize: '12px', lineHeight: 1.7 }}>
                   {result.desc}
                 </p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
+          <div className="mt-12 pt-8" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
             <Link
               href="/results"
-              style={{ color: '#0F2044', fontFamily: 'Montserrat, sans-serif' }}
-              className="text-base font-semibold hover:opacity-70 transition-opacity underline underline-offset-4"
+              style={{ border: '1px solid rgba(184,151,59,0.5)', color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.12em', padding: '13px 28px' }}
+              className="inline-block font-semibold uppercase hover:opacity-80 transition-opacity"
             >
-              View All Results &rarr;
+              View All Results
             </Link>
           </div>
         </div>
       </section>
 
-      {/* WHY NWAHIRI LAW */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2
-              style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-              className="text-4xl md:text-5xl font-bold mb-4"
-            >
-              Why Clients Choose Nwahiri Law
+      {/* ── WHY NWAHIRI LAW ──────────────────────────────────── */}
+      <section className="py-24 px-6" style={{ backgroundColor: '#0F2044' }}>
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-14">
+            <div className="flex items-center gap-4 mb-5">
+              <div style={{ backgroundColor: '#B8973B', height: '1px', width: '36px', flexShrink: 0 }} />
+              <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.2em' }} className="uppercase font-semibold">
+                Why Clients Choose Us
+              </span>
+            </div>
+            <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: 'white', fontWeight: 600 }} className="text-4xl md:text-5xl">
+              What Sets Nwahiri Law Apart
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whyItems.map((item, i) => (
-              <div key={i} className="text-center">
-                <div
-                  style={{ backgroundColor: '#0F2044' }}
-                  className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4"
-                >
-                  <span className="text-white text-lg font-bold">{i + 1}</span>
-                </div>
-                <h3
-                  style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-                  className="text-xl font-bold mb-3"
-                >
+            {whyItems.map((item) => (
+              <div key={item.title} className="py-6 pl-6" style={{ borderLeft: '2px solid #B8973B' }}>
+                <h3 style={{ fontFamily: 'Cormorant Garamond, serif', color: 'white', fontSize: '1.35rem', fontWeight: 600 }} className="mb-3">
                   {item.title}
                 </h3>
-                <p
-                  style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280' }}
-                  className="text-sm leading-relaxed"
-                >
+                <p style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(255,255,255,0.45)', fontSize: '13px', lineHeight: 1.75 }}>
                   {item.desc}
                 </p>
               </div>
@@ -521,37 +364,55 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVICE AREAS */}
-      <section style={{ backgroundColor: '#F8F4EE' }} className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2
-            style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }}
-            className="text-3xl md:text-4xl font-bold mb-4"
-          >
-            Serving Clients Across Georgia &amp; Florida
-          </h2>
-          <p
-            style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }}
-            className="text-base mb-8"
-          >
-            Nwahiri Law represents injured individuals throughout Georgia and Florida. Whether your accident
-            happened in Atlanta, Miami, Savannah, Orlando, or anywhere in between, we can help.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {['Georgia', 'Florida', 'Atlanta', 'Miami', 'Savannah', 'Tampa', 'Orlando', 'Augusta'].map((city) => (
-              <span
-                key={city}
-                style={{ backgroundColor: '#0F2044', color: 'white', fontFamily: 'Montserrat, sans-serif' }}
-                className="text-sm font-medium px-4 py-2 rounded-full"
-              >
-                {city}
-              </span>
-            ))}
+      {/* ── GEOGRAPHIC COVERAGE ──────────────────────────────── */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <div className="flex items-center gap-4 mb-5">
+                <div style={{ backgroundColor: '#B8973B', height: '1px', width: '36px', flexShrink: 0 }} />
+                <span style={{ color: '#B8973B', fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.2em' }} className="uppercase font-semibold">
+                  Service Area
+                </span>
+              </div>
+              <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontWeight: 600, lineHeight: 1.15 }} className="text-4xl md:text-5xl mb-6">
+                Serving Georgia &amp; Florida
+              </h2>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '13px', lineHeight: 1.8 }}>
+                Nwahiri Law represents injured individuals and families throughout Georgia and Florida. We handle cases statewide — distance is not a barrier.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <p style={{ color: '#0F2044', fontFamily: 'Montserrat, sans-serif', fontSize: '12px', letterSpacing: '0.1em', fontWeight: 600, borderBottom: '1px solid rgba(15,32,68,0.1)', paddingBottom: '8px' }} className="uppercase mb-4">
+                  Georgia
+                </p>
+                <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '13px', lineHeight: 1.9 }}>
+                  Atlanta · Savannah<br />
+                  Augusta · Macon<br />
+                  Columbus · Athens<br />
+                  Albany · Brunswick<br />
+                  and throughout Georgia
+                </p>
+              </div>
+              <div>
+                <p style={{ color: '#0F2044', fontFamily: 'Montserrat, sans-serif', fontSize: '12px', letterSpacing: '0.1em', fontWeight: 600 }} className="uppercase mb-4">
+                  Florida
+                </p>
+                <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#6b7280', fontSize: '13px', lineHeight: 1.9 }}>
+                  Miami · Orlando<br />
+                  Tampa · Jacksonville<br />
+                  Fort Lauderdale · Hialeah<br />
+                  Tallahassee · Pensacola<br />
+                  and throughout Florida
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* ── FINAL CTA ────────────────────────────────────────── */}
       <HeroCTA />
     </>
   );

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" width="800" height="140">
+  <text x="400" y="55" 
+        font-family="'Cormorant Garamond', 'Times New Roman', Georgia, serif" 
+        font-weight="700" font-size="64" 
+        fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">NWAHIRI LAW</text>
+  <line x1="200.0" y1="80" x2="600.0" y2="80" 
+        stroke="#B8973B" stroke-width="1.5"/>
+  <text x="400" y="110" 
+        font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" 
+        font-weight="400" font-size="14" 
+        fill="rgba(255,255,255,0.7)" text-anchor="middle" letter-spacing="0.18em">ZEALOUSLY ADVOCATING FOR THE PEOPLE</text>
+</svg>
