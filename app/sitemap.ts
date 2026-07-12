@@ -33,6 +33,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy-policy',
     '/legal-disclaimer',
     '/terms-of-use',
+    '/practice-areas/locations/miami-personal-injury-attorney',
+    '/practice-areas/locations/north-miami-personal-injury-attorney',
+    '/practice-areas/locations/miramar-personal-injury-attorney',
+    '/practice-areas/locations/north-miami-beach-personal-injury-attorney',
+    '/practice-areas/locations/miami-gardens-personal-injury-attorney',
+    '/practice-areas/locations/hialeah-personal-injury-attorney',
+    '/practice-areas/locations/homestead-personal-injury-attorney',
+    '/practice-areas/locations/kendall-personal-injury-attorney',
+    '/practice-areas/car-accidents/hialeah',
+    '/blog/can-you-sue-jackson-memorial-hospital',
   ];
 
   return routes.map((route) => ({

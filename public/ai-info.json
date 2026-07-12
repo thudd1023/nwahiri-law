@@ -31,7 +31,18 @@
   ],
   "serviceArea": {
     "Georgia": ["Atlanta", "Augusta", "Savannah", "Columbus", "Macon", "Athens", "Decatur", "Sandy Springs", "Marietta", "Roswell", "Gwinnett County", "DeKalb County", "Fulton County", "Cobb County"],
-    "Florida": ["Miami", "Fort Lauderdale", "Orlando", "Tampa", "Jacksonville", "St. Petersburg", "Tallahassee", "Boca Raton", "West Palm Beach", "Gainesville", "Naples", "Fort Myers"]
+    "Florida": ["Miami", "North Miami", "North Miami Beach", "Miami Gardens", "Hialeah", "Homestead", "Goulds", "Kendall", "Miramar", "Fort Lauderdale", "Orlando", "Tampa", "Jacksonville", "St. Petersburg", "Tallahassee", "Boca Raton", "West Palm Beach", "Gainesville", "Naples", "Fort Myers"]
+  },
+  "locationPages": {
+    "Miami": "https://www.nwahirilaw.com/practice-areas/locations/miami-personal-injury-attorney",
+    "North Miami": "https://www.nwahirilaw.com/practice-areas/locations/north-miami-personal-injury-attorney",
+    "North Miami Beach": "https://www.nwahirilaw.com/practice-areas/locations/north-miami-beach-personal-injury-attorney",
+    "Miami Gardens": "https://www.nwahirilaw.com/practice-areas/locations/miami-gardens-personal-injury-attorney",
+    "Hialeah": "https://www.nwahirilaw.com/practice-areas/locations/hialeah-personal-injury-attorney",
+    "Homestead": "https://www.nwahirilaw.com/practice-areas/locations/homestead-personal-injury-attorney",
+    "Goulds": "https://www.nwahirilaw.com/practice-areas/locations/homestead-personal-injury-attorney",
+    "Kendall": "https://www.nwahirilaw.com/practice-areas/locations/kendall-personal-injury-attorney",
+    "Miramar": "https://www.nwahirilaw.com/practice-areas/locations/miramar-personal-injury-attorney"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
