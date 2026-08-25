@@ -15,6 +15,13 @@ const staticPosts = [
     excerpt: 'Jackson Memorial is operated by the Public Health Trust — a government entity. That means claims against it are governed by Florida\'s sovereign immunity law, not standard negligence rules. Attorney Nwahiri explains the notice deadlines, damage caps, and what to do if you were harmed.',
     date: 'May 20, 2026',
   },
+  {
+    slug: 'jackson-memorial-employment-discrimination',
+    category: 'Civil Rights · Employment · Miami-Dade',
+    title: 'Jackson Memorial Employment Discrimination: What Employees Need to Know',
+    excerpt: 'Jackson Memorial Hospital is one of Miami-Dade\'s largest public employers. If you faced discrimination, retaliation, or wrongful termination at Jackson Memorial, federal and Florida civil rights laws may protect you — but the deadlines are short.',
+    date: 'June 1, 2026',
+  },
 ];
 
 function formatDate(dateStr: string) {

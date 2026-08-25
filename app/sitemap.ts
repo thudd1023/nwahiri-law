@@ -42,7 +42,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/practice-areas/locations/homestead-personal-injury-attorney',
     '/practice-areas/locations/kendall-personal-injury-attorney',
     '/practice-areas/car-accidents/hialeah',
+    '/practice-areas/truck-accidents/miami',
+    '/practice-areas/truck-accidents/atlanta',
+    '/practice-areas/locations/atlanta-personal-injury-attorney',
     '/blog/can-you-sue-jackson-memorial-hospital',
+    '/blog/jackson-memorial-employment-discrimination',
   ];
 
   return routes.map((route) => ({
