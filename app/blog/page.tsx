@@ -22,6 +22,27 @@ const staticPosts = [
     excerpt: 'Jackson Memorial Hospital is one of Miami-Dade\'s largest public employers. If you faced discrimination, retaliation, or wrongful termination at Jackson Memorial, federal and Florida civil rights laws may protect you — but the deadlines are short.',
     date: 'June 1, 2026',
   },
+  {
+    slug: 'uber-lyft-accident-passenger',
+    category: 'Rideshare Accidents · Georgia & Florida',
+    title: 'Injured as a Passenger in an Uber or Lyft? Here\'s What to Do.',
+    excerpt: 'When you are a confirmed rideshare passenger, Uber or Lyft\'s $1 million liability policy applies. But the steps you take in the hours after the crash — including going to the ER the same day — determine what your case is worth.',
+    date: 'June 10, 2026',
+  },
+  {
+    slug: 'hit-by-uber-lyft-driver',
+    category: 'Rideshare Accidents · Georgia & Florida',
+    title: 'Hit by an Uber or Lyft Driver? What to Do If You\'re in Another Vehicle.',
+    excerpt: 'The driver\'s app status at the time of the crash determines which insurance tier applies — from the driver\'s personal policy to Uber or Lyft\'s $1 million commercial coverage. Here is exactly what to do.',
+    date: 'June 10, 2026',
+  },
+  {
+    slug: 'what-to-do-after-commercial-vehicle-accident',
+    category: 'Truck Accidents · Georgia & Florida',
+    title: 'What to Do After Being Hit by a Semi-Truck or Commercial Vehicle',
+    excerpt: 'Black box data can be overwritten in 30 days. The trucking company\'s insurer is already working. These are the steps to take immediately after being hit by a commercial truck — including why going to the ER the same day is non-negotiable.',
+    date: 'June 10, 2026',
+  },
 ];
 
 function formatDate(dateStr: string) {

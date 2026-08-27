@@ -45,8 +45,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/practice-areas/truck-accidents/miami',
     '/practice-areas/truck-accidents/atlanta',
     '/practice-areas/locations/atlanta-personal-injury-attorney',
+    '/practice-areas/car-accidents/atlanta',
+    '/practice-areas/locations/fulton-county-personal-injury-attorney',
+    '/practice-areas/locations/dekalb-county-personal-injury-attorney',
     '/blog/can-you-sue-jackson-memorial-hospital',
     '/blog/jackson-memorial-employment-discrimination',
+    '/blog/uber-lyft-accident-passenger',
+    '/blog/hit-by-uber-lyft-driver',
+    '/blog/what-to-do-after-commercial-vehicle-accident',
   ];
 
   return routes.map((route) => ({
