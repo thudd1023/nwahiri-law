@@ -51,10 +51,13 @@ export default function CivilRightsPage() {
         <div className="max-w-4xl mx-auto">
           <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }} className="text-3xl font-bold mb-6">The Legal Basis for Civil Rights Claims</h2>
           <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed mb-4">
-            Civil rights claims against law enforcement are typically brought under 42 U.S.C. § 1983, which allows individuals to sue government officials who violate their constitutional rights under color of law.
+            <strong>42 U.S.C. § 1983</strong> is a federal civil rights statute enacted after the Civil War that allows any person to sue a state or local government official who, acting &ldquo;under color of state law,&rdquo; violates their constitutional rights. It is the primary legal vehicle for holding law enforcement officers, sheriffs, and municipal agencies accountable for excessive force, unlawful detention, and other constitutional violations.
+          </p>
+          <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed mb-4">
+            Under <em>Monell v. Department of Social Services</em> (1978), municipalities — cities, counties, and their agencies — can be sued under § 1983 when a constitutional violation results from an official policy, a widespread custom, or a failure to train officers adequately. This means the city or county itself can be held liable, not just the individual officer.
           </p>
           <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed">
-            These cases are challenging — government entities and their attorneys have significant resources to defend them. Attorney Nwahiri has the experience and the commitment to see civil rights cases through. His record includes a $300,000 civil rights settlement against a Florida government entity.
+            These cases are challenging — government entities invoke qualified immunity and have significant resources. Attorney Nwahiri has the experience and commitment to see civil rights cases through. His record includes a <strong>$300,000 civil rights settlement</strong> against a Florida government entity.
           </p>
         </div>
       </section>

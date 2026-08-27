@@ -153,6 +153,16 @@ export default function Footer() {
                 >
                   LinkedIn
                 </a>
+                <a
+                  href="https://www.instagram.com/nwahirilaw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Nwahiri Law on Instagram"
+                  className="text-gray-500 hover:text-white transition-colors"
+                  style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.08em' }}
+                >
+                  Instagram
+                </a>
               </div>
             </div>
             <p className="text-gray-600 text-xs max-w-sm text-right">

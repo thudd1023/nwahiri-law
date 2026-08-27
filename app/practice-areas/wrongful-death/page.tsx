@@ -50,10 +50,10 @@ export default function WrongfulDeathPage() {
           <div>
             <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }} className="text-3xl font-bold mb-6">Who Can Bring a Wrongful Death Claim</h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-sm leading-relaxed mb-4">
-              In Georgia, the surviving spouse has the primary right to bring the claim. If there is no surviving spouse, children of the deceased may bring the claim. If there are no children, the parents may bring it. The estate may also bring a survival action for certain categories of damages.
+              <strong>In Georgia</strong> (O.C.G.A. § 51-4-2), the surviving spouse has the primary right to bring the claim. If there is no surviving spouse, children of the deceased may bring the claim. If there are no children, the parents may bring it. The estate may bring a survival action for pre-death medical expenses and pain and suffering. <strong>The statute of limitations in Georgia is two years from the date of death.</strong>
             </p>
             <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-sm leading-relaxed">
-              In Florida, the personal representative of the estate brings the wrongful death claim on behalf of survivors — typically the spouse, children, and parents of the deceased.
+              <strong>In Florida</strong> (Fla. Stat. §§ 768.16–768.26, the Florida Wrongful Death Act), the personal representative of the estate brings the claim on behalf of survivors — typically the spouse, children, and parents of the deceased. Survivors may recover for lost support, lost services, and mental pain and suffering. <strong>The statute of limitations in Florida is two years from the date of death.</strong>
             </p>
           </div>
           <div>

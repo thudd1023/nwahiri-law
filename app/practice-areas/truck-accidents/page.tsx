@@ -34,7 +34,10 @@ export default function TruckAccidentsPage() {
             Truck Accident Claims Are Not the Same as Car Accident Claims
           </h2>
           <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed mb-4">
-            Trucking cases involve a layer of complexity that most accident claims do not. Commercial carriers are regulated by the Federal Motor Carrier Safety Administration (FMCSA). They are required to maintain logs, inspect vehicles, follow hours-of-service rules, and meet strict licensing requirements. When they fail to do so, and a crash results, they bear significant legal responsibility.
+            Commercial trucking is governed by the Federal Motor Carrier Safety Administration (FMCSA), which sets mandatory safety standards under 49 CFR Parts 390–399. These regulations cover hours-of-service limits (49 CFR Part 395), vehicle inspection requirements, drug and alcohol testing, and driver qualification standards. When a carrier violates these rules and a crash results, those violations are powerful evidence of negligence.
+          </p>
+          <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed mb-4">
+            FMCSA regulations also require minimum insurance coverage for commercial carriers: <strong>$750,000</strong> for general freight, <strong>$1 million</strong> for oil transport, and up to <strong>$5 million</strong> for carriers transporting hazardous materials. These minimums are significantly higher than standard auto policies — which is one reason truck accident claims often yield substantially larger recoveries than car accident claims.
           </p>
           <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed mb-6">
             What makes these cases more complex — and more valuable — is that multiple parties may be liable:
@@ -110,7 +113,7 @@ export default function TruckAccidentsPage() {
             How Attorney Nwahiri Builds Truck Accident Cases
           </h2>
           <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed mb-4">
-            The evidence in a truck accident case is time-sensitive. Electronic logging device (ELD) data, black box recordings, driver logs, inspection records, and surveillance footage can all disappear or be overwritten quickly. We act immediately to preserve evidence, send preservation demands to the carrier, and identify every avenue of liability.
+            The evidence in a truck accident case is time-sensitive. An Electronic Logging Device (ELD) — a federally mandated device that records a driver&apos;s hours and location — can be overwritten or reset. Event Data Recorder (EDR/black box) data recording pre-crash speed and braking may be lost within 30 days. Driver logs, inspection records, and dashcam footage can disappear quickly. We act immediately to preserve evidence, send litigation hold demands to the carrier, and identify every avenue of liability.
           </p>
           <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563' }} className="text-base leading-relaxed">
             We consult with accident reconstruction experts, FMCSA compliance specialists, and medical professionals to build a case that reflects the full value of your injuries — and then we fight for that value in negotiations or at trial.

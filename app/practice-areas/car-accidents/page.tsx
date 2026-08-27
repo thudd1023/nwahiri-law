@@ -55,6 +55,26 @@ export default function CarAccidentsPage() {
         </div>
       </section>
 
+      <section style={{ backgroundColor: '#F8F4EE' }} className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }} className="text-3xl font-bold mb-6">Georgia vs. Florida: Key Legal Differences</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6" style={{ borderLeft: '3px solid #B8973B' }}>
+              <h3 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontSize: '1.3rem', fontWeight: 600 }} className="mb-3">Georgia — At-Fault State</h3>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563', fontSize: '13px', lineHeight: 1.85 }}>
+                Georgia is a &ldquo;fault&rdquo; state under O.C.G.A. § 51-11-7 (modified comparative fault). The driver who caused the accident is responsible for all damages. If you are less than 50% at fault, you can still recover — but your award is reduced by your percentage of fault. The statute of limitations for car accident injury claims in Georgia is <strong>two years</strong> from the date of the accident.
+              </p>
+            </div>
+            <div className="bg-white p-6" style={{ borderLeft: '3px solid #B8973B' }}>
+              <h3 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044', fontSize: '1.3rem', fontWeight: 600 }} className="mb-3">Florida — No-Fault / PIP State</h3>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', color: '#4b5563', fontSize: '13px', lineHeight: 1.85 }}>
+                Florida is a &ldquo;no-fault&rdquo; state under Fla. Stat. § 627.736. All drivers are required to carry Personal Injury Protection (PIP) insurance of at least $10,000, which covers 80% of medical expenses and 60% of lost wages regardless of who caused the accident. To step outside the no-fault system and sue the at-fault driver, your injuries must meet Florida&apos;s &ldquo;serious injury&rdquo; threshold. The statute of limitations in Florida is <strong>two years</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 style={{ fontFamily: 'Cormorant Garamond, serif', color: '#0F2044' }} className="text-3xl font-bold mb-6">What to Do After a Car Accident</h2>

@@ -59,6 +59,7 @@ const jsonLd = {
   ],
   sameAs: [
     'https://www.linkedin.com/company/nwahirilaw',
+    'https://www.instagram.com/nwahirilaw/',
     'https://www.nationaltriallawyers.org',
     'https://www.bestlawyers.com',
     'https://www.nwahirilaw.com/ai-info',
