@@ -53,9 +53,29 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3 — Firm */}
+          {/* Column 3 — Locations & Firm */}
           <div>
             <h3 style={{ color: '#B8973B', fontFamily: 'Cormorant Garamond, serif', letterSpacing: '0.1em' }} className="text-base font-semibold mb-5 uppercase tracking-wider">
+              Locations
+            </h3>
+            <ul className="space-y-2 mb-7">
+              {[
+                { label: 'Atlanta Personal Injury', href: '/practice-areas/locations/atlanta-personal-injury-attorney' },
+                { label: 'Fulton County', href: '/practice-areas/locations/fulton-county-personal-injury-attorney' },
+                { label: 'DeKalb County', href: '/practice-areas/locations/dekalb-county-personal-injury-attorney' },
+                { label: 'Miami Personal Injury', href: '/practice-areas/locations/miami-personal-injury-attorney' },
+                { label: 'North Miami', href: '/practice-areas/locations/north-miami-personal-injury-attorney' },
+                { label: 'Hialeah', href: '/practice-areas/locations/hialeah-personal-injury-attorney' },
+                { label: 'Miramar', href: '/practice-areas/locations/miramar-personal-injury-attorney' },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-gray-400 text-sm hover:text-white transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 style={{ color: '#B8973B', fontFamily: 'Cormorant Garamond, serif', letterSpacing: '0.1em' }} className="text-base font-semibold mb-3 uppercase tracking-wider">
               Firm
             </h3>
             <ul className="space-y-2">
@@ -121,6 +141,19 @@ export default function Footer() {
                 Nwahiri Law
               </span>
               <p className="text-gray-500 text-xs mt-1">Personal Injury &amp; Civil Rights Attorney | Georgia &amp; Florida</p>
+              {/* Social links */}
+              <div className="flex items-center gap-4 mt-3">
+                <a
+                  href="https://www.linkedin.com/company/nwahirilaw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Nwahiri Law on LinkedIn"
+                  className="text-gray-500 hover:text-white transition-colors"
+                  style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '11px', letterSpacing: '0.08em' }}
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
             <p className="text-gray-600 text-xs max-w-sm text-right">
               Attorney Advertising. Results may vary. Prior outcomes do not guarantee future results.
@@ -131,7 +164,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-6 pt-6" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-gray-600">
-            <span>&copy; 2026 Nwahiri Law. All rights reserved.</span>
+            <span>&copy; {new Date().getFullYear()} Nwahiri Law. All rights reserved.</span>
             <div className="flex flex-wrap gap-4">
               <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
               <Link href="/terms-of-use" className="hover:text-gray-300 transition-colors">Terms of Use</Link>
